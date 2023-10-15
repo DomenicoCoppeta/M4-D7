@@ -16,18 +16,18 @@ async function getItem() {
         }
         });
     const data = await response.json();
+    item = data
     console.log(data);
     displayItem(data);
-    return data
     } catch (error) {
     console.error("Errore: " + error.message);
     }
 }
 
+
 function displayItem(data) {
-    document.getElementById("name").innerHTML = item.name;
-    document.querySelector("img").src = item.img;
-    document.getElementById("brand").innerHTML = "Category :"+ item.brand;
+    document.getElementById("title").innerHTML = item.brand + ' ' + item.name;
+    document.querySelector("img").src = item.imageUrl;
     document.getElementById("price").innerHTML = "Price :"+item.price+" $";
-    document.getElementById("description").innerHTML = "Asin :"+item.description;
+    document.getElementById("description").innerHTML = item.description;
 }
