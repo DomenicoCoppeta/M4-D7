@@ -33,10 +33,10 @@ function displayItems(data) {
                     <p class="card-text" >${description}</p>
                     <p class="card-text mb-1">${price}€</p>
                     <hr class="my-2">
-                    <div class="d-flex align-items-end py-0 px-0 pb-0 mt-1">
-                    <a href="#!" onclick="addToCart()" class="btn btn-primary shadow-0 me-1">Add to cart</a>
-                    <a href="/itemM4D7.html?id=${_id}" class="btn btn-info shadow-0 me-1">Info</a>
-                    <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover"><i class="bi bi-heart-fill mx-1"></i></a>
+                    <div class="d-flex align-items-center justify-content-center py-0 px-0 pb-0 mt-1">
+                        <a href="/itemM4D7.html?id=${_id}" class="btn btn-info shadow-0 me-1">Info</a>
+                        <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover me-1"><i class="bi bi-heart-fill mx-1"></i></a>
+                        <a href="#!" onclick="addToCart()" class="btn btn-success shadow-0 me-1">Add to cart</a>
                     </div>
                 </div>
             </div>
