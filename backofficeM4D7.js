@@ -101,14 +101,14 @@ async function editItem(id) {
                             <input required id="imageEdit" type="text" class="form-control" value="${imageUrl}">
                         </div>
                     </div>
-                    <div class="col-1 pe-4">
-                        <div class="d-flex align-items-center">
-                            <input required id="priceEdit" step="0.01" type="number" class="form-control" value="${price}">
+                    <div class="col-1 pe-0">
+                        <div class="ms-3 d-flex align-items-center">
+                            <input required id="priceEdit" step="0.01" type="number" class="form-control ms-1" value="${price}">
                         </div>
                     </div>
                     <div class="col-1">
-                        <button class="ms-2 btn btn-success" type="submit"><i class="bi bi-check-lg"></i></i></button>
-                        <button class="ms-2 btn btn-danger" type="button" onclick="abortEdit()"><i class="bi bi-x-octagon"></i></button>
+                        <button class="ms-3 btn btn-success" type="submit"><i class="bi bi-check-lg"></i></i></button>
+                        <button class="ms-0 btn btn-danger" type="button" onclick="abortEdit()"><i class="bi bi-x-octagon"></i></button>
                     </div>
                 </div>
     </form>`
@@ -171,12 +171,12 @@ itemsList.innerHTML = data.map(({ _id, name , description, brand, imageUrl, pric
             <div class="col-4 overflow-hidden pe-4">
                 ${imageUrl}
             </div>
-            <div class="col-1 px-0">
+            <div class="col-1 px-0 ms-4">
                 ${price}
             </div>
             <div class="col-1 px-0">
-                <button class="ms-2 btn btn-primary" onclick="editItem('${_id}')"><i class="bi bi-pencil-square"></i></button>
-                <button class="ms-2 btn btn-danger" onclick="deleteItem('${_id}')" ><i class="bi bi-trash3"></i></button>
+                <button class="btn btn-primary" onclick="editItem('${_id}')"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn btn-danger" onclick="deleteItem('${_id}')" ><i class="bi bi-trash3"></i></button>
             </div>
         </div>
         <hr>`).join("")
