@@ -4,7 +4,7 @@ const getOptions = {
     method: "GET",
     redirect: "follow",
     headers: {
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTFiZjJiZjM5MzI3YzAwMThkM2EyYzciLCJpYXQiOjE2OTYzMzA0MzEsImV4cCI6MTY5NzU0MDAzMX0.9subLPlYGhuc30WR5TKf22gdFOGim5LmFpqzZbb8FPg"
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM2YzE4MTg0ZjU2ZjAwMTgyMWQ0MzIiLCJpYXQiOjE2OTgwODcyOTcsImV4cCI6MTY5OTI5Njg5N30.6Ywz863k85DGFFwiuTOhq3eNEg1xxlijVCuCFYctdZg"
     }
 }
 // Array per conservare gli items
@@ -31,13 +31,13 @@ function displayItems(data) {
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">${brand} - ${name}</h5>
                     <p class="card-text" >${description}</p>
-                    <p class="card-text mb-1">${price}€</p>
-                    <hr class="my-2">
-                    <div class="d-flex align-items-center justify-content-center py-0 px-0 pb-0 mt-1">
-                        <a href="/itemM4D7.html?id=${_id}" class="btn btn-info shadow-0 me-1">Info</a>
-                        <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover me-1"><i class="bi bi-heart-fill mx-1"></i></a>
-                        <a href="#!" onclick="addToCart()" class="btn btn-success shadow-0 me-1">Add to cart</a>
-                    </div>
+                    <p class="card-text mb-1">Price: ${price}€</p>
+                        <hr class="my-2">
+                        <div class="d-flex align-items-center justify-content-center py-0 px-0 pb-0 mt-1">
+                            <a href="/itemM4D7.html?id=${_id}" class="btn btn-info shadow-0 me-1">Info</a>
+                            <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover me-1"><i class="bi bi-heart-fill mx-1"></i></a>
+                            <a href="#!" onclick="addToCart()" class="btn btn-success shadow-0 me-1">Add to cart</a>
+                        </div>
                 </div>
             </div>
         </div>`).join("")
