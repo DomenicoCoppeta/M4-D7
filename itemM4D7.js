@@ -12,7 +12,7 @@ async function getItem() {
         method: "GET",
         redirect: "follow",
         headers: {
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM2YzE4MTg0ZjU2ZjAwMTgyMWQ0MzIiLCJpYXQiOjE2OTgwODcyOTcsImV4cCI6MTY5OTI5Njg5N30.6Ywz863k85DGFFwiuTOhq3eNEg1xxlijVCuCFYctdZg"
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM3OWJhYmU3NDZhMDAwMTQ4MTQzMWQiLCJpYXQiOjE2OTgxNDMxNDcsImV4cCI6MTY5OTM1Mjc0N30.ZELUkJGxdLTD41Lt1ODTgroMxWgDSf-5O-6vvni1Eas"
         }
         });
     const data = await response.json();

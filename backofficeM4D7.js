@@ -9,7 +9,7 @@ const getOptions = {
     method: "GET",
     redirect: "follow",
     headers: {
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM2YzE4MTg0ZjU2ZjAwMTgyMWQ0MzIiLCJpYXQiOjE2OTgwODcyOTcsImV4cCI6MTY5OTI5Njg5N30.6Ywz863k85DGFFwiuTOhq3eNEg1xxlijVCuCFYctdZg"
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM3OWJhYmU3NDZhMDAwMTQ4MTQzMWQiLCJpYXQiOjE2OTgxNDMxNDcsImV4cCI6MTY5OTM1Mjc0N30.ZELUkJGxdLTD41Lt1ODTgroMxWgDSf-5O-6vvni1Eas"
     }
     }
 
@@ -18,7 +18,7 @@ const postOptions = {
     redirect: "follow",
     headers: {
     "Content-Type": "application/json",
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM2YzE4MTg0ZjU2ZjAwMTgyMWQ0MzIiLCJpYXQiOjE2OTgwODcyOTcsImV4cCI6MTY5OTI5Njg5N30.6Ywz863k85DGFFwiuTOhq3eNEg1xxlijVCuCFYctdZg",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM3OWJhYmU3NDZhMDAwMTQ4MTQzMWQiLCJpYXQiOjE2OTgxNDMxNDcsImV4cCI6MTY5OTM1Mjc0N30.ZELUkJGxdLTD41Lt1ODTgroMxWgDSf-5O-6vvni1Eas",
     },
     body: JSON.stringify ({
         name: productName.value,
@@ -51,7 +51,7 @@ async function addItem(item) {
         redirect: "follow",
         headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM2YzE4MTg0ZjU2ZjAwMTgyMWQ0MzIiLCJpYXQiOjE2OTgwODcyOTcsImV4cCI6MTY5OTI5Njg5N30.6Ywz863k85DGFFwiuTOhq3eNEg1xxlijVCuCFYctdZg",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM3OWJhYmU3NDZhMDAwMTQ4MTQzMWQiLCJpYXQiOjE2OTgxNDMxNDcsImV4cCI6MTY5OTM1Mjc0N30.ZELUkJGxdLTD41Lt1ODTgroMxWgDSf-5O-6vvni1Eas",
         },
         body: JSON.stringify ({
             name: productName.value,
@@ -103,7 +103,7 @@ async function editItem(id) {
                     </div>
                     <div class="col-1 pe-0">
                         <div class="ms-3 d-flex align-items-center">
-                            <input required id="priceEdit" step="0.01" type="number" class="form-control ms-1" value="${price}">
+                            <input required id="priceEdit" step="0.01" type="number" class="form-control ms-2" value="${price}">
                         </div>
                     </div>
                     <div class="col-1">
@@ -137,7 +137,7 @@ async function submitEditItem(item, id) {
         redirect: 'follow',
         headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM2YzE4MTg0ZjU2ZjAwMTgyMWQ0MzIiLCJpYXQiOjE2OTgwODcyOTcsImV4cCI6MTY5OTI5Njg5N30.6Ywz863k85DGFFwiuTOhq3eNEg1xxlijVCuCFYctdZg",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM3OWJhYmU3NDZhMDAwMTQ4MTQzMWQiLCJpYXQiOjE2OTgxNDMxNDcsImV4cCI6MTY5OTM1Mjc0N30.ZELUkJGxdLTD41Lt1ODTgroMxWgDSf-5O-6vvni1Eas",
         },
         body: JSON.stringify(editedItem)
         })
@@ -187,7 +187,7 @@ async function deleteItem(id) {
     const response = await fetch ( endPoint + id, {
     method: 'DELETE',
     headers: {
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM2YzE4MTg0ZjU2ZjAwMTgyMWQ0MzIiLCJpYXQiOjE2OTgwODcyOTcsImV4cCI6MTY5OTI5Njg5N30.6Ywz863k85DGFFwiuTOhq3eNEg1xxlijVCuCFYctdZg",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM3OWJhYmU3NDZhMDAwMTQ4MTQzMWQiLCJpYXQiOjE2OTgxNDMxNDcsImV4cCI6MTY5OTM1Mjc0N30.ZELUkJGxdLTD41Lt1ODTgroMxWgDSf-5O-6vvni1Eas",
         }
     })
     if (response.ok) {
